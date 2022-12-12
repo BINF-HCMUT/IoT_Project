@@ -1,0 +1,4 @@
+../Core/Src/timer.c:14:6:setTimer	16	static
+../Core/Src/timer.c:20:5:timer_timeout	16	static
+../Core/Src/timer.c:26:5:timer_remaining	16	static
+../Core/Src/timer.c:31:6:timerRun	16	static
