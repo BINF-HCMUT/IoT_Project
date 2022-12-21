@@ -1,2 +1,2 @@
-../Core/Src/fsm.c:32:6:command_parser_fsm	32	static
-../Core/Src/fsm.c:145:6:uart_communication_fsm	80	static
+../Core/Src/fsm.c:43:6:command_parser_fsm	32	static
+../Core/Src/fsm.c:237:6:uart_communication_fsm	80	static

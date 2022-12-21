@@ -1,6 +1,6 @@
 from Adafruit_IO import MQTTClient
-
-AIO_FEED_ID = ["Temp_button","Pump_button"]
+from uart import writeSerial
+AIO_FEED_ID = ["light-button","pump-button"]
 AIO_USERNAME = "HCMUT_IOT"
 AIO_KEY = "aio_IhZL44jpgMiZiuIxiV3Fe4ShZzVB"
 
@@ -18,6 +18,10 @@ def disconnected(client):
 
 def message(client , feed_id , payload):
     print("Data from " + feed_id + ":" + payload)
+    if feed_id == "light-button":
+        writeSerial("BL:" + payload)
+    if feed_id == "pump-button":
+        writeSerial("BP:" + payload)
 
 
 client = MQTTClient(AIO_USERNAME, AIO_KEY)

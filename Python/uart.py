@@ -10,7 +10,7 @@ def getPort():
     for i in range(0, N):
         port = ports[i]
         strPort = str(port)
-        if "COM8" in strPort: #tùy theo tên port trên PC
+        if "COM11" in strPort: #tùy theo tên port trên PC
             splitPort = strPort.split(" ")
             commPort = (splitPort[0])
             #print(commPort)
